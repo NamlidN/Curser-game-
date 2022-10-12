@@ -35,52 +35,132 @@ img {
     border-radius: 100rem;
     height: 8rem;
     width: 8rem;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 150ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 }
 
-img:hover {
-    transform: rotate(29999999deg);
-    transition: 9999s;
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 div:hover {
-    transition: 15s;
+
+    transition: 30s;
 }
 
 
-.a:hover:hover {
-    margin-top: 10rem;
+.a:hover .b {
+    margin-top: 15rem;
     transition-duration: 1s;
 }
 
-.b:hover .z {
+.a:hover .c {
+    margin-top: -20rem;
+    transition-delay: 2s;
+    transition-duration: 2s;
+}
+
+.a :hover .d {
+    margin-left: 15rem;
+    transition-delay: 2.5s;
     transition-duration: 1s;
+}
+
+.a :hover .e {
+    margin-top: 40rem;
     transition-delay: 5s;
-    margin-left: 2.1rem;
-}
-
-.z:hover .c {
     transition-duration: 5s;
-    transition-delay:4s;
-    margin-top: -1.5rem;
 }
-/* .x:hover .y{
+
+.a :hover .f {
+    margin-left: -15rem;
+    transition-delay: 6s;
+    transition-duration: 2s;
+}
+
+.a :hover .g {
+    margin-left: 15rem;
+    transition-delay: 6.5s;
+    transition-duration: 2s;
+}
+
+.a :hover .h {
+    margin-left: 55rem;
+    transition-delay: 6.5s;
     transition-duration: 3s;
-    transition-delay:7s;
-    margin-top: 1.5rem;
-
-}    */
-
-.im {
-    opacity: 0;
 }
 
+.a :hover .i {
+    margin-top: -25rem;
+    transition-delay: 7s;
+    transition-duration: 2s;
+}
+
+.a :hover .j {
+    margin-top: 40rem;
+    transition-delay: 7.5s;
+    transition-duration: 2s;
+}
+
+.a :hover .k {
+    margin-left: -20rem;
+    transition-delay: 7.5s;
+    transition-duration: 2s;
+}
+
+.a :hover .l {
+    margin-right: -20rem;
+    transition-delay: 7.6s;
+    transition-duration: 2s;
+}
+
+.a:hover .m {
+    margin-top: -50rem;
+
+    transition-delay: 9.6s;
+    transition-duration: 2s;
+}
+
+.a:hover .n {
+    margin-left: 21rem;
+    transition-delay: 11.6s;
+    transition-duration: 4s;
+}
+
+.a:hover .z {
+    margin-left: -70rem;
+    transition-delay: 17.6s;
+    transition-duration: 5s;
+}
+
+/* .d :hover .e{
+    margin-top: -.1rem; 
+    transition-delay: 6s;
+    transition-duration: 1s;
+} */
 p {
-    text-transform: uppercase;
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 15pt;
     text-align: center;
-    color: #bab0b0;
+    font-size: 12pt;
+    color: #c96a6a;
+    margin: .5rem 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*!rainbow border */
@@ -89,6 +169,7 @@ h1 {
     text-align: center;
     font-size: 20pt;
     padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .box {
