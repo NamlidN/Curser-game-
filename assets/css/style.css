@@ -21,9 +21,9 @@ div {
     position: absolute;
     cursor: progress;
     border-radius: 100rem;
-    width: 8.5rem;
+    width: 15rem;
     /*einfacher wenn div gröser*/
-    height: 8.5rem;
+    height: 15rem;
     background-position: center;
     background-size: cover;
 
@@ -33,8 +33,8 @@ img {
 
     margin: 0 auto 0 auto;
     border-radius: 100rem;
-    height: 8rem;
-    width: 8rem;
+    height: 15rem;
+    width: 15rem;
 
     -webkit-animation-name: spin;
     -webkit-animation-duration: 150ms;
